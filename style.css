@@ -1,26 +1,38 @@
+html{
+  font-size: 50%;
+}
+
 * {
   margin: 0;
-  padding: 0;
+  padding: 0; 
   box-sizing: border-box;
 }
 
 h1 {
   color: #426696;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 3.5rem;
   opacity: 0.8;
 }
-h2,
-p {
+h2 {
   color: #658ec6;
   font-weight: 500;
   opacity: 0.8;
+  font-size: 2rem;
 }
 
 h3 {
   color: #426696;
   font-weight: 600;
   opacity: 0.8;
+  font-size: 2rem;
+}
+
+p{
+  color: #658ec6;
+  font-weight: 500;
+  opacity: 0.8;
+  font-size: 1.5rem;
 }
 
 main {
@@ -32,13 +44,16 @@ main {
   justify-content: center;
 }
 
+
+
 input:focus{
   outline: none;
+
 }
 
 .avatar{
-  height: 170px;
-  width: 170px;
+  height: 9rem;
+  width: 9rem;
   border-radius: 50%;
 }
 
@@ -51,10 +66,12 @@ input:focus{
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.3)
   );
-  border-radius: 2rem;
+  border-radius: 3rem;
   z-index: 2;
   backdrop-filter: blur(2rem);
   display: flex;
+  
+  
 }
 .circle1,
 .circle2 {
@@ -64,19 +81,19 @@ input:focus{
     rgba(255, 255, 255, 0.8),
     rgba(255, 255, 255, 0.3)
   );
-  height: 20rem;
-  width: 20rem;
+  height: 30rem;
+  width: 30rem;
   position: absolute;
   border-radius: 50%;
 }
 
 .circle1 {
-  top: 5%;
-  right: 15%;
+  top: 6%;
+  right: 14%;
 }
 .circle2 {
   bottom: 5%;
-  left: 10%;
+  left: 12%;
 }
 .dashboard {
   flex: 1;
@@ -90,7 +107,8 @@ input:focus{
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.3)
   );
-  border-radius: 2rem;
+  border-radius: 3rem;
+ 
 }
 .link {
   display: flex;
@@ -101,6 +119,9 @@ input:focus{
 .link h2 {
   padding: 0rem 2rem;
 }
+.link img{
+  width: 4rem;
+}
 
 .games {
   flex: 2;
@@ -108,7 +129,7 @@ input:focus{
 
 .pro {
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
-  border-radius: 2rem;
+  border-radius: 3rem;
   color: white;
   padding: 1rem;
   position: relative;
@@ -118,6 +139,7 @@ input:focus{
   position: absolute;
   top: -10%;
   right: 10%;
+  width: 10rem;
 }
 .pro h2 {
   width: 40%;
@@ -137,9 +159,10 @@ input:focus{
     rgba(255, 255, 255, 0.3)
   );
   border: none;
-  width: 50%;
+  width: 45%;
   padding: 0.5rem;
-  border-radius: 2rem;
+  border-radius: 3rem;
+  height: 2.5rem; 
 }
 
 .games {
@@ -156,17 +179,24 @@ input:focus{
     rgba(255, 255, 255, 0.8),
     rgba(255, 255, 255, 0.5)
   );
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   margin: 2rem 0rem;
   padding: 2rem;
   box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
   justify-content: space-between;
+  height: 14rem;
+  width: 66rem;
+}
+
+.card img{
+  width: 8.5rem;
+  height: 8.5rem;
 }
 
 .progress {
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
-  width: 100%;
-  height: 25%;
+  width:100%;
+  height: 20%;
   border-radius: 1rem;
   position: relative;
   overflow: hidden;
