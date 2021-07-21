@@ -183,14 +183,16 @@ input:focus{
   margin: 2rem 0rem;
   padding: 2rem;
   box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
-  justify-content: space-between;
+  justify-content:space-between;
   height: 14rem;
   width: 66rem;
+  align-items: center;
 }
 
 .card img{
-  width: 8.5rem;
-  height: 8.5rem;
+  width: 5rem;
+  height: 5rem;
+
 }
 
 .progress {
@@ -211,8 +213,8 @@ input:focus{
 }
 .card-info {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 .percentage {
@@ -220,4 +222,14 @@ input:focus{
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.card-info h2{
+  margin-right: 6.25rem;
+}
+
+
+.srch{color: rgb(172, 172, 172);}
+.srch::placeholder{
+  color: rgb(172, 172, 172);
 }
